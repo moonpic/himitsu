@@ -41,7 +41,7 @@ export default hopeTheme({
     notice: [
       {
         path: "/",
-        title: "We need you help!",
+        title: "We need your help!",
         content: "The creator of himitsu has been kidnapped, we need 10k dollars",
         actions: [
           {
