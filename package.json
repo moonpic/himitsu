@@ -6,14 +6,6 @@
   "type": "module",
 
   "scripts": {
-    "test": "pnpm lint && pnpm build",
-    "lint": "pnpm lint:es && pnpm lint:mdl && pnpm lint:style",
-    "lint:fix": "pnpm lint:es:fix && pnpm lint:style:fix",
-    "lint:es": "eslint . --fix",
-    "lint:es:fix": "eslint . --fix",
-    "lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025 MD033",
-    "lint:style": "stylelint \"**/*.{styl,vue}\" \"src/.vitepress/**/*.{styl,vue}\"",
-    "lint:style:fix": "stylelint --fix \"**/*.{styl,vue}\" \"src/.vitepress/**/*.{styl,vue}\"",
     "docs:build": "vuepress-vite build src",
     "docs:clean-dev": "vuepress-vite dev src --clean-cache",
     "docs:dev": "vuepress-vite dev src",
