@@ -1,7 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import localesConfig from './navbar/locales'
-
+import localesConfig from './navbar/locales.ts'
 export default defineUserConfig({
   base: "/",
 
@@ -9,5 +8,5 @@ export default defineUserConfig({
   theme,
 
   // Enable it with pwa
-  // shouldPrefetch: false,
+   shouldPrefetch: false,
 });
