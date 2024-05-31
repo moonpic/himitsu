@@ -3,6 +3,8 @@ import { enNavbar } from "./navbar/index.js";
 import { enSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
+
+      
   
   hostname: "https://himitsu2.vercel.app",
 
@@ -35,8 +37,13 @@ export default hopeTheme({
     },
 
   },
+  
 
   plugins: {
+    search: true,
+    // search: {
+    //   plugin options here
+    // },
 
     notice: [
       {
@@ -64,7 +71,7 @@ export default hopeTheme({
     },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard", "VPBanner"],
     },
 
     // All features are enabled for demo, only preserve features you need here
@@ -75,7 +82,8 @@ export default hopeTheme({
       component: true,
       demo: false,
       figure: true,
-      imgLazyload: true,
+      breaks: true,
+      imgLazyload: false,
       imgSize: true,
       include: true,
       mark: true,

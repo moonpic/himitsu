@@ -14,29 +14,17 @@ actions:
     icon: download
     link: /download/
 
----
-::: center
-```component VPCard
-title: Tracking
-desc: Automatically keep track of your series with AniList & MyAnimeList
-logo: assets/icon/reload.svg
-link: /docs/guides/tracking
-background: rgba(11, 13, 25, 1)
-```
+features:
+- title: Tracking
+  details: Automatically keep track of your series with AniList & MyAnimeList
+  icon: https://himitsu2.vercel.app/assets/icon/reload.svg
+  link: /docs/guides/tracking
+- title: Customization
+  details: Make your content and Himitsu look exactly the way you want.
+  icon: https://himitsu2.vercel.app/assets/icon/regulate.svg
+  link: /docs/guides/tracking
+- title: Extensions
+  details: Bring your own content from a variety of sources.
+  icon: https://himitsu2.vercel.app/assets/icon/addon.svg
 
-```component VPCard
-title: Customization
-desc: Make your content and Himitsu look exactly the way you want.
-logo: assets/icon/regulate.svg
-link: /docs/guides/tracking
-background: rgba(11, 13, 25, 1)
-```
-
-```component VPCard
-title: Extensions
-desc: Bring your own content from a variety of sources.
-logo: assets/icon/addon.svg
-link: /docs/guides/tracking
-background: rgba(11, 13, 25, 1)
-```
-:::
+  :::

@@ -1,7 +1,15 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import localesConfig from './navbar/locales.ts'
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+
 export default defineUserConfig({
+  plugins: [
+    googleAnalyticsPlugin({
+      id: "G-7YTE0XJ6X3",
+    }),
+  ],
+  
   base: "/",
 
   locales: localesConfig,
