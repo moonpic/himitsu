@@ -1,11 +1,13 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar } from "./navbar/index.js";
+import { enNavbar, esNavbar } from "./navbar/index.js";
 import { enSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-
+  navbarLayout: {
+    start: ["Search", "Language"],
+    end: ["Links", "Repo"],
+  },
       
-  
   hostname: "https://himitsu2.vercel.app",
 
   author: {
@@ -35,15 +37,31 @@ export default hopeTheme({
         editLink: "Edit this page on GitHub",
       },
     },
+  "/es" : {
+  navbar: enNavbar,
+
+      // sidebar
+      sidebar: enSidebar,
+
+      footer: "Himitsu",
+
+      displayFooter: true,
+
+      metaLocales: {
+        editLink: "Edit this page on GitHub",
+      },
+    },
 
   },
-  
 
   plugins: {
-    search: true,
-    // search: {
-    //   plugin options here
-    // },
+    
+
+    docsearch: {
+      appId: 'X0VGF1D6HR',
+      apiKey: '70daba0e597f1fdfaf2c93e7719a5633',
+      indexName: 'himitsu2',
+    },
 
     notice: [
       {
@@ -74,6 +92,9 @@ export default hopeTheme({
       components: ["Badge", "VPCard", "VPBanner"],
     },
 
+  copyright: {
+    license: "MPL-2.0",
+  },
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,

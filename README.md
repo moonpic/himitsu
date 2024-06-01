@@ -26,15 +26,11 @@ The developer(s) of this application does not have any affiliation with the cont
 ### License
 
 <pre>
-Copyright © 2024 The Mihon Open Source Project
+Copyright © 2024 The Himitsu Open Source Project
 
 This Source Code Form is subject to the terms of the Mozilla Public
 License, v. 2.0. If a copy of the MPL was not distributed with this
 file, You can obtain one at http://mozilla.org/MPL/2.0/.
 </pre>
-
-<p>
-  <img src="https://count.getloli.com/get/@:repodevildantotsu" alt=":repodevildantotsu" />
-</p>
 
 </div>

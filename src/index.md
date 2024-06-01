@@ -26,5 +26,3 @@ features:
 - title: Extensions
   details: Bring your own content from a variety of sources.
   icon: https://himitsu2.vercel.app/assets/icon/addon.svg
-
-  :::
