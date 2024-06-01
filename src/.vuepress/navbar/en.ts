@@ -1,19 +1,19 @@
 import { navbar } from "vuepress-theme-hope";
 export const enNavbar = navbar([
   {
-    text: "Download",
-    icon: "lightbulb",
+    text: "Get v3.0.0",
+    icon: "download",
     prefix: "/guide/",
     children: [
       {
-        text: "Bar",
+        text: "soon",
         icon: "lightbulb",
         prefix: "bar/",
         children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
       },
       {
-        text: "Foo",
-        icon: "lightbulb",
+        text: "soon",
+        icon: "download",
         prefix: "foo/",
         children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
       },
@@ -21,27 +21,17 @@ export const enNavbar = navbar([
     },
 
   {
-    text: "Guide",
-    icon: "lightbulb",
-    prefix: "/guide/",
-    children: [
-      {
-        text: "Bar",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
-      },
-      {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
-      },
-    ],
+    text: "Docs",
+    icon: "folder",
+    link: "https://himitsu2.vercel.app/",
   },
   {
-    text: "V2 Docs",
+    text: "News",
     icon: "book",
     link: "https://himitsu2.vercel.app/",
+  },
+  { text: "",
+    icon: "/assets/icon/gitlab.svg",
+    link: "https://himitsu2.vercel.app/"
   },
 ]);

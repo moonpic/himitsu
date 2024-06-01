@@ -3,9 +3,10 @@ import { enNavbar, esNavbar } from "./navbar/index.js";
 import { enSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
+
   navbarLayout: {
     start: ["Search", "Language"],
-    end: ["Links", "Repo"],
+    end: ["Links", "Outlook", "Repo"],
   },
       
   hostname: "https://himitsu2.vercel.app",
@@ -17,8 +18,7 @@ export default hopeTheme({
   iconAssets: "fontawesome-with-brands",
 
 
-  repo: "moonpic/himitsu-website",
-
+  repo: "repodevil/website",
   docsDir: "src",
 
   locales: {
@@ -55,13 +55,11 @@ export default hopeTheme({
   },
 
   plugins: {
-    
-
-    docsearch: {
-      appId: 'X0VGF1D6HR',
-      apiKey: '70daba0e597f1fdfaf2c93e7719a5633',
-      indexName: 'himitsu2',
-    },
+     docsearch: {
+    appId: 'X0VGF1D6HR',
+    apiKey: '70daba0e597f1fdfaf2c93e7719a5633',
+    indexName: 'himitsu2',
+  },
 
     notice: [
       {
