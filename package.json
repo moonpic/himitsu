@@ -10,6 +10,10 @@
     "docs:dev": "vuepress-vite dev src",
     "docs:update-package": "pnpm dlx vp-update"
   },
+  "dependencies": {
+    "@octokit/rest": "20.1.1",
+    "@octokit/types": "13.5.0"
+  },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.13",
     "@vuepress/plugin-docsearch": "2.0.0-rc.33",

@@ -5,7 +5,7 @@ import { enSidebar } from "./sidebar/index.js";
 export default hopeTheme({
 
   navbarLayout: {
-    start: ["Search", "Language"],
+    start: ["Language", "Search"],
     end: ["Links", "Outlook", "Repo"],
   },
       
@@ -65,10 +65,10 @@ export default hopeTheme({
       {
         path: "/",
         title: "We need your help!",
-        content: "The creator of himitsu has been kidnapped, we need 10k dollars",
+        content: "The creator of Himitsu has been kidnapped and is being held for a $10k ransom!",
         actions: [
           {
-            text: "Help him",
+            text: "Save him",
             link: "https://youtu.be/dQw4w9WgXcQ?si=6Z1-2sii4sWKnOOt",
             type: "primary",
           },
