@@ -4,11 +4,12 @@ import localesConfig from './navbar/locales.js'
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 export default defineUserConfig({
-  plugins: [
-    googleAnalyticsPlugin({
-      id: "G-7YTE0XJ6X3",
-    }),
-  ],
+  //unnecessary for now
+  //plugins: [
+    //googleAnalyticsPlugin({
+     // id: "G-7YTE0XJ6X3",
+   // }),
+  //],
   
   base: "/",
 
@@ -16,5 +17,5 @@ export default defineUserConfig({
   theme,
 
   // Enable it with pwa
-   shouldPrefetch: false,
+  // shouldPrefetch: false,
 });

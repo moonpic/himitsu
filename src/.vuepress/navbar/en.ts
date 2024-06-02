@@ -30,8 +30,4 @@ export const enNavbar = navbar([
     icon: "book",
     link: "https://himitsu2.vercel.app/",
   },
-  { text: "",
-    icon: "/assets/icon/gitlab.svg",
-    link: "https://himitsu2.vercel.app/"
-  },
 ]);

@@ -1,7 +1,7 @@
 <div align="center">
 
-<a href="https://repodevil.netlify.app/">
-    <img src="https://repodevil.netlify.app/android-chrome-192x192.png" alt="Himitsu logo" title="Himitsu logo" width="80"/>
+<a href="https://himitsu2.vercel.app/">
+    <img src="https://himitsu2.vercel.app/assets/icon/chrome-512.png" alt="Himitsu logo" title="Himitsu logo" width="80"/>
 </a>
 
 # Himitsu [Website](#)²
@@ -11,8 +11,7 @@
 
 [![Discord server](https://img.shields.io/discord/464998866639650839.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF)](https://discord.gg/vnrhgrt)
 [![GitHub downloads](https://img.shields.io/github/downloads/tsubakibot/tsubakibuilder/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat)](https://repodevil.netlify.app/download/)
-
-[![Netlify deployment](https://api.netlify.com/api/v1/badges/4903fcd3-e430-475c-99f0-bb58fd25c2ca/deploy-status)](https://app.netlify.com/sites/repodevil/deploys)
+![Website Deploy](https://deploy-badge.vercel.app/?url=https://himitsu2.vercel.app/&name=Himitsu)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

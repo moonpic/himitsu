@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: assets/icon/chrome-192.png
+heroImage: assets/icon/logo.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Himitsu

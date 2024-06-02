@@ -18,7 +18,7 @@ export default hopeTheme({
   iconAssets: "fontawesome-with-brands",
 
 
-  repo: "repodevil/website",
+  repo: "moonpic/website",
   docsDir: "src",
 
   locales: {
@@ -45,7 +45,7 @@ export default hopeTheme({
 
       footer: "Himitsu",
 
-      displayFooter: true,
+      displayFooter: false,
 
       metaLocales: {
         editLink: "Edit this page on GitHub",
@@ -69,7 +69,7 @@ export default hopeTheme({
         actions: [
           {
             text: "Save him",
-            link: "https://youtu.be/dQw4w9WgXcQ?si=6Z1-2sii4sWKnOOt",
+            link: "https://buymeacoffee.com/abandonedcart",
             type: "primary",
           },
           { text: "Nah" },
@@ -167,45 +167,46 @@ export default hopeTheme({
       // sandpack: true,
     },
 
-     pwa: {
-   favicon: "/favicon.ico",
-   cacheHTML: true,
-   cacheImage: true,
-       appendBase: true,
-       apple: {
-         icon: "/assets/icon/apple-icon-152.png",
-         statusBarColor: "black",
-       },
-       msTile: {
-         image: "/assets/icon/ms-icon-144.png",
-         color: "#ffffff",
-       },
-       manifest: {
-         icons: [
-           {
-             src: "/assets/icon/chrome-mask-512.png",
-             sizes: "512x512",
-             purpose: "maskable",
-             type: "image/png",
-           },
-           {
-             src: "/assets/icon/chrome-mask-192.png",
-             sizes: "192x192",
-             purpose: "maskable",
-             type: "image/png",
-           },
-           {
-             src: "/assets/icon/chrome-512.png",
-             sizes: "512x512",
-             type: "image/png",
-           },
-           {
-             src: "/assets/icon/chrome-192.png",
-             sizes: "192x192",
-             type: "image/png",
-           },
-         ], 
-       },
-     },
+    // until web is finished
+  //   pwa: {
+  // favicon: "/favicon.ico",
+  // cacheHTML: true,
+  // cacheImage: true,
+      // appendBase: true,
+      // apple: {
+         //icon: "/assets/icon/apple-icon-152.png",
+        // statusBarColor: "black",
+       //},
+       //msTile: {
+        // image: "/assets/icon/ms-icon-144.png",
+         //color: "#ffffff",
+       //},
+       //manifest: {
+         //icons: [
+          // {
+           //  src: "/assets/icon/chrome-mask-512.png",
+            // sizes: "512x512",
+            // purpose: "maskable",
+            // type: "image/png",
+           //},
+           //{
+             //src: "/assets/icon/chrome-mask-192.png",
+             //sizes: "192x192",
+             //purpose: "maskable",
+            // type: "image/png",
+           //},
+          // {
+             //src: "/assets/icon/chrome-512.png",
+             //sizes: "512x512",
+             //type: "image/png",
+           //},
+           //{
+             //src: "/assets/icon/chrome-192.png",
+             //sizes: "192x192",
+            // type: "image/png",
+          // },
+        // ], 
+      // },
+     //}
   },
 });
