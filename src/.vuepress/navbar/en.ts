@@ -1,8 +1,14 @@
 import { navbar } from "vuepress-theme-hope";
+import { data as release } from '../data/release.data'
 export const enNavbar = navbar([
   {
-    text: "Get v3.0.0",
+    text: "Get 3.0.0",
     icon: "download",
+    link: "/download/"
+  },
+  {
+    text: "Docs",
+    icon: "folder",
     prefix: "/guide/",
     children: [
       {
@@ -18,12 +24,6 @@ export const enNavbar = navbar([
         children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
       },
     ],
-    },
-
-  {
-    text: "Docs",
-    icon: "folder",
-    link: "https://himitsu2.vercel.app/",
   },
   {
     text: "News",

@@ -5,10 +5,10 @@ import { enSidebar } from "./sidebar/index.js";
 export default hopeTheme({
 
   navbarLayout: {
-    start: ["Language", "Search"],
-    end: ["Links", "Outlook", "Repo"],
+    start: ["Search"],
+    end: ["Links", "Language", "Outlook", "Repo"],
   },
-      
+
   hostname: "https://himitsu2.vercel.app",
 
   author: {
@@ -155,7 +155,7 @@ export default hopeTheme({
       // },
 
       // @moonpic I may use this in the future
-      // Install reveal.js before enabling it 
+      // Install reveal.js before enabling it
       // revealJs: {
       //   plugins: ["highlight", "math", "search", "notes", "zoom"],
       // },
@@ -205,7 +205,7 @@ export default hopeTheme({
              //sizes: "192x192",
             // type: "image/png",
           // },
-        // ], 
+        // ],
       // },
      //}
   },
