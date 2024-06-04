@@ -3,11 +3,11 @@ import { data as release } from '../data/release.data'
 export const enNavbar = navbar([
   {
     text: "Download",
-    icon: "lightbulb",
+    icon: "download",
     children: [
       {
         text: "Download",
-        icon: "lightbulb",
+        icon: "download",
         link: "/download/",
       },
       {
@@ -30,15 +30,10 @@ export const enNavbar = navbar([
       },
       {
         text: "soon",
-        icon: "download",
+        icon: "book",
         prefix: "foo/",
         children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
       },
     ],
-  },
-  {
-    text: "News",
-    icon: "book",
-    link: "https://himitsu2.vercel.app/",
   },
 ]);

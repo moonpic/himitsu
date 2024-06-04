@@ -2,11 +2,11 @@ import { navbar } from "vuepress-theme-hope";
 export const esNavbar = navbar([
   {
     text: "Download",
-    icon: "lightbulb",
+    icon: "download",
     children: [
       {
         text: "Download",
-        icon: "lightbulb",
+        icon: "download",
         link: "/download/",
       },
       {
@@ -34,10 +34,5 @@ export const esNavbar = navbar([
         children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
       },
     ],
-  },
-  {
-    text: "V2 Docs",
-    icon: "book",
-    link: "https://himitsu2.vercel.app/",
   },
 ]);
