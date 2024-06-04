@@ -2,9 +2,20 @@ import { navbar } from "vuepress-theme-hope";
 import { data as release } from '../data/release.data'
 export const enNavbar = navbar([
   {
-    text: "Get 3.0.0",
-    icon: "download",
-    link: "/download/"
+    text: "Download",
+    icon: "lightbulb",
+    children: [
+      {
+        text: "Download",
+        icon: "lightbulb",
+        link: "/download/",
+      },
+      {
+        text: "Changelogs",
+        icon: "lightbulb",
+        link: "/changelogs/",
+      },
+    ],
   },
   {
     text: "Docs",

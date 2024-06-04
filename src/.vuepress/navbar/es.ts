@@ -3,23 +3,19 @@ export const esNavbar = navbar([
   {
     text: "Download",
     icon: "lightbulb",
-    prefix: "/guide/",
     children: [
       {
-        text: "Bar",
+        text: "Download",
         icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
+        link: "/download/",
       },
       {
-        text: "Foo",
+        text: "Changelogs",
         icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
+        link: "/changelogs/",
       },
     ],
-    },
-
+  },
   {
     text: "Guide",
     icon: "lightbulb",
