@@ -7,6 +7,8 @@ import Contributors from './Contributors.vue'
 const props = defineProps<{ type: keyof AppRelease }>()
 const { type } = toRefs(props)
 
+release = await release
+
 const md = new MarkdownIt()
 
 const changelog = computed(() => {

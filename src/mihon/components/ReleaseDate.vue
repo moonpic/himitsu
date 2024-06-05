@@ -6,6 +6,8 @@ import { type AppRelease, data as release } from '../data/release.data'
 const props = defineProps<{ type: keyof AppRelease }>()
 const { type } = toRefs(props)
 
+release = await release
+
 const momentInfo = computed(() => ({
   relative: moment(release[type.value].published_at).fromNow(),
   exact: moment(release[type.value].published_at).format('dddd, MMMM Do YYYY [at] HH:mm'),

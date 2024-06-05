@@ -5,9 +5,7 @@ const octokit = new Octokit()
 
 type GitHubReleaseList = GetResponseDataTypeFromEndpointMethod<typeof octokit.repos.listReleases>
 
-declare const data: GitHubReleaseList
-
-export async function data(): Promise<GitHubReleaseList> {
+async function data(): Promise<GitHubReleaseList> {
     const releases = await octokit.paginate(octokit.repos.listReleases, {
       owner: 'RepoDevil',
       repo: 'Himitsu',
@@ -16,3 +14,4 @@ export async function data(): Promise<GitHubReleaseList> {
 
     return releases
 }
+export { data }

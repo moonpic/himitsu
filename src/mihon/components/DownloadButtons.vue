@@ -4,6 +4,8 @@
 import { computed, onMounted, ref } from 'vue'
 import { data as release } from '../data/release.data'
 
+release = await release
+
 const downloadInformation = computed(() => ({
   beta: {
     tagName: release.beta.tag_name ?? '00000000',

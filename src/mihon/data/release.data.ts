@@ -10,9 +10,7 @@ export interface AppRelease {
   beta: GitHubRelease
 }
 
-declare const data: AppRelease
-
-export async function data(): Promise<AppRelease> {
+async function data(): Promise<AppRelease> {
     const { data: stable } = await octokit.repos.getLatestRelease({
       owner: 'RepoDevil',
       repo: 'Himitsu',
@@ -25,3 +23,4 @@ export async function data(): Promise<AppRelease> {
 
     return { stable, beta }
 }
+export { data }

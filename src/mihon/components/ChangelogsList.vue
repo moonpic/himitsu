@@ -3,6 +3,8 @@ import MarkdownIt from 'markdown-it'
 import { data as changelogs } from '../data/changelogs.data'
 import Contributors from './Contributors.vue'
 
+changelogs = await changelogs
+
 const md = new MarkdownIt()
 
 function renderMarkdown(string: string | null | undefined) {
