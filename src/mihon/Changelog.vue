@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, toRefs } from 'vue'
 import MarkdownIt from 'markdown-it'
-import { type AppRelease, data as release } from '../data/release.data'
+import { type AppRelease, data as release } from '../github/release.data'
 import Contributors from './Contributors.vue'
 
 const props = defineProps<{ type: keyof AppRelease }>()
@@ -12,7 +12,7 @@ const releaseData = await release()
 const md = new MarkdownIt()
 
 const changelog = computed(() => {
-  const flavoredString = (releaseData[type.value].body ?? '')
+  const flavoredString = (releaseData[type.value].body ?? '').replaceAll("\n", "\n\n")
     .replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, '[@$2](https://github.com/$2)')
     .replace('https://github.com/RepoDevil/Himitsu/releases', '/changelogs/')
 

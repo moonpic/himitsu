@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
-import { data as releaseData } from '../data/release.data'
+import { data as releaseData } from '../github/release.data'
 
 const release = ref(null)
 
@@ -80,7 +80,7 @@ onMounted(() => {
 </template>
 
 <style scoped lang="scss">
-@import '../../.vuepress/styles/palette.scss';
+@import '../.vuepress/styles/palette.scss';
 
 .download-buttons {
   display: flex;

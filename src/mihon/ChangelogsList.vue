@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import MarkdownIt from 'markdown-it'
-import { data as changelogsData } from '../data/changelogs.data'
+import { data as changelogsData } from '../github/changelogs.data'
 import Contributors from './Contributors.vue'
 
 const changelogs = ref([])
@@ -14,7 +14,7 @@ const md = new MarkdownIt()
 
 function renderMarkdown(string: string | null | undefined) {
   const body = string ?? 'No changelog provided.'
-  const flavoredString = body
+  const flavoredString = body.replaceAll("\n", "\n\n")
     .split(/---\r\n\r\n### Checksums|---\r\n\r\nMD5/)[0]
     .replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, '[@$2](https://github.com/$2)')
     .replace(/#(\d+)/g, '[#$1](https://github.com/RepoDevil/Himitsu/issues/$1)')

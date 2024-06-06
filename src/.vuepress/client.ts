@@ -2,11 +2,11 @@ import { defineClientConfig } from "vuepress/client";
 import "vuepress-theme-hope/presets/shinning-feature-panel.scss";
 import "vuepress-theme-hope/presets/bounce-icon.scss";
 
-import Changelog from "../mihon/components/Changelog.vue";
-import ChangelogsList from "../mihon/components/ChangelogsList.vue";
-import Contributors from "../mihon/components/Contributors.vue";
-import DownloadButtons from "../mihon/components/DownloadButtons.vue";
-import ReleaseDate from "../mihon/components/ReleaseDate.vue";
+import Changelog from "../mihon/Changelog.vue";
+import ChangelogsList from "../mihon/ChangelogsList.vue";
+import Contributors from "../mihon/Contributors.vue";
+import DownloadButtons from "../mihon/DownloadButtons.vue";
+import ReleaseDate from "../mihon/ReleaseDate.vue";
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
