@@ -1,2 +1,13 @@
-// you can change colors here
-$theme-color: #096dd9;
+// src/.vuepress/styles/palette.scss
+$primary-color: #096dd9;
+
+$light-gray: #717274;
+$warning-color: #717274;
+$dark-gray: #0d090d;
+$darker-gray: #0d090d;
+$darkest-gray: #0d090d;
+
+.bg-dark-gray {
+  background-color: $dark-gray;
+  border-color: $dark-gray;
+}

@@ -7,12 +7,12 @@ import Contributors from './Contributors.vue'
 const props = defineProps<{ type: keyof AppRelease }>()
 const { type } = toRefs(props)
 
-release = await release
+const releaseData = await release()
 
 const md = new MarkdownIt()
 
 const changelog = computed(() => {
-  const flavoredString = (release[type.value].body ?? '')
+  const flavoredString = (releaseData[type.value].body ?? '')
     .replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, '[@$2](https://github.com/$2)')
     .replace('https://github.com/RepoDevil/Himitsu/releases', '/changelogs/')
 
@@ -21,16 +21,15 @@ const changelog = computed(() => {
 </script>
 
 <template>
-  <div class="changelog">
+  <div class="changelog bg-dark-gray">
     <header>
-      <IconNewspaperVariant />
       <h2>Changelog</h2>
     </header>
     <div v-html="changelog" />
     <Contributors
-      :body="release[type].body!"
-      :author="release[type].author.login"
-      :tag="release[type].tag_name"
+      :body="releaseData[type].body!"
+      :author="releaseData[type].author.login"
+      :tag="releaseData[type].tag_name"
     />
   </div>
   <div class="fullChangelog">
@@ -48,7 +47,6 @@ const changelog = computed(() => {
   display: block
   border: 1px solid var(--vp-c-bg-soft)
   border-radius: 12px
-  background-color: var(--vp-c-bg-soft)
   transition: border-color 0.25s, background-color 0.25s
   padding: 24px
   height: 100%
@@ -59,12 +57,6 @@ const changelog = computed(() => {
     justify-content: center
     align-items: baseline
     margin: 0 0 1rem
-  }
-
-  svg {
-    font-size: 1.2em
-    margin-right: 0.5rem
-    vertical-align: middle
   }
 
   h2 {

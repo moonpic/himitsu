@@ -1,9 +1,14 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
 import MarkdownIt from 'markdown-it'
-import { data as changelogs } from '../data/changelogs.data'
+import { data as changelogsData } from '../data/changelogs.data'
 import Contributors from './Contributors.vue'
 
-changelogs = await changelogs
+const changelogs = ref([])
+
+onMounted(async () => {
+  changelogs.value = await changelogsData()
+})
 
 const md = new MarkdownIt()
 

@@ -1,9 +1,18 @@
-import { Octokit } from '@octokit/rest'
-import type { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
+import axios from 'axios'
 
-const octokit = new Octokit()
-
-type GitHubRelease = GetResponseDataTypeFromEndpointMethod<typeof octokit.repos.getLatestRelease>
+interface GitHubRelease {
+  url: string
+  assets_url: string
+  upload_url: string
+  html_url: string
+  id: number
+  author: {
+    login: string
+    id: number
+    //...
+  }
+  //...
+}
 
 export interface AppRelease {
   stable: GitHubRelease
@@ -11,16 +20,18 @@ export interface AppRelease {
 }
 
 async function data(): Promise<AppRelease> {
-    const { data: stable } = await octokit.repos.getLatestRelease({
-      owner: 'RepoDevil',
-      repo: 'Himitsu',
-    })
+  const stableResponse = await axios.get<GitHubRelease>(
+    `https://api.github.com/repos/RepoDevil/Himitsu/releases/latest`
+  )
 
-    const { data: beta } = await octokit.repos.getLatestRelease({
-      owner: 'RepoDevil',
-      repo: 'TsubakiBuilder',
-    })
+  const betaResponse = await axios.get<GitHubRelease>(
+    `https://api.github.com/repos/RepoDevil/TsubakiBuilder/releases/latest`
+  )
 
-    return { stable, beta }
+  return {
+    stable: stableResponse.data,
+    beta: betaResponse.data,
+  }
 }
+
 export { data }

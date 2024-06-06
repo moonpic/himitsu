@@ -1,39 +1,34 @@
 <script setup lang="ts">
-/// <reference types="@types/gtag.js" />
-
 import { computed, onMounted, ref } from 'vue'
-import { data as release } from '../data/release.data'
+import { data as releaseData } from '../data/release.data'
 
-release = await release
+const release = ref(null)
 
-const downloadInformation = computed(() => ({
-  beta: {
-    tagName: release.beta.tag_name ?? '00000000',
-    asset: (release.beta.assets ?? [])
-      .find(a => /^Himitsu-[A-Za-z0-9]+-google-universal-matagi.apk/.test(a.name)),
-  },
-  stable: {
-    tagName: release.stable.tag_name ?? '00000000',
-    asset: (release.stable.assets ?? [])
-      .find(a => /^Himitsu-[A-Za-z0-9]+-google-universal-matagi.apk/.test(a.name)),
-  },
-}))
+onMounted(async () => {
+  release.value = await releaseData()
+})
+
+const downloadInformation = computed(() => {
+  if (!release.value) return { beta: { tagName: '', asset: null }, stable: { tagName: '', asset: null } }
+  return {
+    beta: {
+      tagName: release.value.beta.tag_name ?? '00000000',
+      asset: (release.value.beta.assets ?? [])
+        .find(a => /^Himitsu-[A-Za-z0-9]+-google-universal-matagi.apk/.test(a.name)),
+    },
+    stable: {
+      tagName: release.value.stable.tag_name ?? '00000000',
+      asset: (release.value.stable.assets ?? [])
+        .find(a => /^Himitsu-[A-Za-z0-9]+-google-universal-matagi.apk/.test(a.name)),
+    },
+  }
+})
 
 const isAndroid = ref(true)
 
 onMounted(() => {
   isAndroid.value = !!navigator.userAgent.match(/android/i)
 })
-
-function handleAnalytics(type: 'beta' | 'stable') {
-  window.gtag?.('event', 'Download', {
-    event_category: 'App',
-    event_label: type === 'stable' ? 'Stable' : 'Beta',
-    version: type === 'stable'
-      ? release.stable.tag_name
-      : release.beta.tag_name,
-  })
-}
 </script>
 
 <template>
@@ -65,9 +60,7 @@ function handleAnalytics(type: 'beta' | 'stable') {
         class="download-button primary"
         :download="downloadInformation.stable.asset?.name"
         :href="downloadInformation.stable.asset?.browser_download_url"
-        @click="handleAnalytics('stable')"
       >
-        <IconDownload />
         <span class="text">Himitsu</span>
         <span class="version">{{ downloadInformation.stable.tagName }}</span>
       </a>
@@ -75,9 +68,7 @@ function handleAnalytics(type: 'beta' | 'stable') {
         class="download-button secondary"
         :download="downloadInformation.beta.asset?.name"
         :href="downloadInformation.beta.asset?.browser_download_url"
-        @click="handleAnalytics('beta')"
       >
-        <IconBugReport />
         <span class="text">Himitsu</span>
         <span class="version">㊙ {{ downloadInformation.beta.tagName }} ㊙</span>
       </a>
@@ -88,89 +79,115 @@ function handleAnalytics(type: 'beta' | 'stable') {
   </div>
 </template>
 
-<style lang="stylus">
+<style scoped lang="scss">
+@import '../../.vuepress/styles/palette.scss';
+
 .download-buttons {
-  display: flex
-  gap: 0.75em
-  justify-content: center
-  align-items: center
-  margin: 0.75em auto
+  display: flex;
+  gap: 0.75em;
+  justify-content: center;
+  align-items: center;
+  margin: 0.75em auto;
 }
 
 .download-button {
-  display: inline-block
-  border: 1px solid transparent
-  text-align: center
-  font-weight: 600
-  white-space: nowrap
-  transition: color 0.25s, border-color 0.25s, background-color 0.25s
-  cursor: pointer
-  transition: all 0.3s ease
-  border-radius: 20px
-  padding: 0 20px
-  line-height: 38px
-  font-size: 14px
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 0 20px;
+  line-height: 38px;
+  font-size: 14px;
 
   &:hover {
-    text-decoration: none !important
+    text-decoration: none !important;
   }
 
   &.primary {
-    border-color: var(--vp-button-brand-border)
-    color: var(--vp-button-brand-text)
-    background-color: var(--vp-button-brand-bg)
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-brand-text);
+    background-color: var(--vp-button-brand-bg);
 
     &:hover {
-      border-color: var(--vp-button-brand-hover-border)
-      color: var(--vp-button-brand-hover-text)
-      background-color: var(--vp-button-brand-hover-bg)
+      border-color: var(--vp-button-brand-hover-border);
+      color: var(--vp-button-brand-hover-text);
+      background-color: var(--vp-button-brand-hover-bg);
     }
 
     &:active {
-      border-color: var(--vp-button-brand-active-border)
-      color: var(--vp-button-brand-active-text)
-      background-color: var(--vp-button-brand-active-bg)
+      border-color: var(--vp-button-brand-active-border);
+      color: var(--vp-button-brand-active-text);
+      background-color: var(--vp-button-brand-active-bg);
     }
   }
 
   &.secondary {
-    border-color: var(--vp-button-alt-border)
-    color: var(--vp-button-alt-text)
-    background-color: var(--vp-button-alt-bg)
+    border-color: var(--vp-button-alt-border);
+    color: var(--vp-button-alt-text);
+    background-color: var(--vp-button-alt-bg);
 
     &:hover {
-      border-color: var(--vp-button-alt-hover-border)
-      color: var(--vp-button-alt-hover-text)
-      background-color: var(--vp-button-alt-hover-bg)
+      border-color: var(--vp-button-alt-hover-border);
+      color: var(--vp-button-alt-hover-text);
+      background-color: var(--vp-button-alt-hover-bg);
     }
 
     &:active {
-      border-color: var(--vp-button-alt-active-border)
-      color: var(--vp-button-alt-active-text)
-      background-color: var(--vp-button-alt-active-bg)
+      border-color: var(--vp-button-alt-active-border);
+      color: var(--vp-button-alt-active-text);
+      background-color: var(--vp-button-alt-active-bg);
     }
   }
 
   svg {
-    display: inline-block
-    vertical-align: middle
-    margin-right: 0.5em
-    font-size: 1.25em
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    font-size: 1.25em;
   }
 
   .text {
-    margin-right: 10px
+    margin-right: 10px;
   }
 
   .version {
-    font-size: 0.8em
+    font-size: 0.8em;
   }
 }
 
 .version-disclaimer {
-  display: block
-  text-align: center
-  margin: 0.75em auto
-  font-size: 0.75rem
+  display: block;
+  text-align: center;
+  margin: 0.75em auto;
+  font-size: 0.75rem;
+}
+
+.custom-block {
+  padding: 0.5em; /* Reduced padding */
+  border-left: 5px solid;
+  margin: 1em 0;
+  border-radius: 15px; /* More rounded borders */
+
+  &.danger {
+    background-color: $darker-gray;
+    border-color: $darkest-gray;
+    color: $light-gray;
+  }
+
+  &.warning {
+    background-color: $dark-gray;
+    border-color: $darker-gray;
+    color: $warning-color;
+  }
+
+  &-title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
 }
 </style>

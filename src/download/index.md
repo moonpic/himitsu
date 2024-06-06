@@ -14,5 +14,6 @@ The latest stable version of **Himitsu** was released **<ReleaseDate type="stabl
 Beta releases are intended for testing upcoming changes and may not be a stable experience.
 
 <DownloadButtons />
-
-<Changelog type="stable" />
+<suspense>
+<Changelog type="stable"/>
+</suspense>
