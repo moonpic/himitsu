@@ -4,13 +4,12 @@ import localesConfig from './navbar/locales.js'
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 export default defineUserConfig({
-  //unnecessary for now
-  //plugins: [
-    //googleAnalyticsPlugin({
-     // id: "G-7YTE0XJ6X3",
-   // }),
-  //],
-  
+  plugins: [
+    googleAnalyticsPlugin({
+     id: "G-J6PHW601VW",
+   }),
+  ],
+
   base: "/",
 
   locales: localesConfig,
