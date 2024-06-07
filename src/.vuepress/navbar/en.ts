@@ -1,5 +1,4 @@
 import { navbar } from "vuepress-theme-hope";
-import { data as release } from '../data/release.data'
 export const enNavbar = navbar([
   {
     text: "Download",

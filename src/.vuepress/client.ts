@@ -21,9 +21,9 @@ export default defineClientConfig({
     app.component("DownloadButtons", DownloadButtons);
     app.component("ReleaseDate", ReleaseDate);
 
-    // Apply setupTransparentNavbar conditionally based on the route
-    router.afterEach((to) => {
-      if (to.path === '/download' || to.path.startsWith('/changelogs')) {
+     // Apply setupTransparentNavbar conditionally based on the route
+     router.afterEach((to) => {
+      if (typeof window !== 'undefined' && (to.path === '/download' || to.path.startsWith('/changelogs'))) {
         setupTransparentNavbar({ type: "all", threshold: 3410 });
       }
     });
