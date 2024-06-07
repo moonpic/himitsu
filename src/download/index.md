@@ -3,6 +3,7 @@ title: Download
 description: Download page that allows users to access and install the latest version of the app.
 lastUpdated: false
 editLink: false
+download: true
 prev: false
 next: false
 ---

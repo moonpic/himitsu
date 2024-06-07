@@ -20,19 +20,11 @@ export const enNavbar = navbar([
   {
     text: "Docs",
     icon: "folder",
-    prefix: "/guide/",
     children: [
       {
-        text: "soon",
+        text: "Guides",
         icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
-      },
-      {
-        text: "soon",
-        icon: "book",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
+        children: [{ text: "Introduction", icon: "ellipsis", link: "/getting-started/" }],
       },
     ],
   },

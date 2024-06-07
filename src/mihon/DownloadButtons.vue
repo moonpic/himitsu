@@ -35,7 +35,7 @@ onMounted(() => {
   <div>
     <div v-if="!isAndroid" class="custom-block danger">
       <p class="custom-block-title">
-        Unsupported operating system
+        <HopeIcon icon="fas fa-exclamation-triangle" /> Unsupported operating system
       </p>
       <p>
         <strong>Himitsu</strong> is an <strong>Android app</strong> only.
@@ -44,7 +44,7 @@ onMounted(() => {
     </div>
     <div v-if="!isAndroid" class="custom-block warning">
       <p class="custom-block-title">
-        Caution
+        <HopeIcon icon="fas fa-info-circle" /> Caution
       </p>
       <p>
         Any app for any operating systems other than Android called
@@ -180,8 +180,8 @@ onMounted(() => {
   }
 
   &.warning {
-    background-color: $dark-gray;
-    border-color: $darker-gray;
+    background-color: $dark-gray2;
+    border-color: $darkest-gray2;
     color: $warning-color;
   }
 

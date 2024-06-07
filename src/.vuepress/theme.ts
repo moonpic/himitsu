@@ -3,6 +3,8 @@ import { enNavbar, esNavbar } from "./navbar/index.js";
 import { enSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
+  
+  
 
   navbarLayout: {
     start: ["Search"],
@@ -15,7 +17,7 @@ export default hopeTheme({
     name: "Moonpic",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "fontawesome",
 
 
   repo: "moonpic/website",
@@ -97,6 +99,7 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: false,
+      hint: true,
       codetabs: true,
       component: true,
       demo: false,

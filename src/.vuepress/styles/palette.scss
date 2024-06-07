@@ -1,13 +1,15 @@
 // src/.vuepress/styles/palette.scss
-$primary-color: #096dd9;
+$theme-color: #096dd9;
 
-$light-gray: #717274;
+$light-gray: #fffdfd73;
 $warning-color: #717274;
-$dark-gray: #0d090d;
-$darker-gray: #0d090d;
-$darkest-gray: #0d090d;
+$dark-gray: #0C1017;
+$darker-gray: #0c1017d8;
+$darkest-gray: #35393fc1;
+$dark-gray2: #0c1017db;
+$darkest-gray2: #35393fc1;
 
 .bg-dark-gray {
-  background-color: $dark-gray;
-  border-color: $dark-gray;
+  background-color: #0f132e40;
+ 
 }

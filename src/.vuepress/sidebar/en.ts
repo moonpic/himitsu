@@ -13,6 +13,6 @@ export const enSidebar = sidebar({
       prefix: "guide/",
       children: "structure",
     },
-    { text: 'Introduction', link: '/docs/guides/getting-started' },
+    { text: 'Introduction', link: '/getting-started/' },
   ],
 });
