@@ -7,7 +7,7 @@ heroText: Himitsu
 tagline: A secret so good that even the name is banned.
 actions:
   - text: Get Started
-    link: docs/guides/getting-started/
+    link: /getting-started/
     type: primary
 
   - text: Download
