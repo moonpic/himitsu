@@ -1,15 +1,14 @@
 // src/.vuepress/styles/palette.scss
 $theme-color: #096dd9;
 
-$light-gray: #fffdfd73;
-$warning-color: #717274;
-$dark-gray: #0C1017;
-$darker-gray: #0c1017d8;
-$darkest-gray: #35393fc1;
-$dark-gray2: #0c1017db;
-$darkest-gray2: #35393fc1;
+$light-gray: #bcbcbc; // Platform text
+$warning-color: #bcbcbc; // Caution text
+$dark-gray: #0C1017; // Unused
+$darker-gray: #444444; // Platform box
+$darkest-gray: #888888; // Platform shadow
+$dark-gray2: #444444; // Caution box
+$darkest-gray2: #888888; // Caution shadow
 
 .bg-dark-gray {
-  background-color: #0f132e40;
- 
+  background-color: #eeeeee; // Changelog
 }
