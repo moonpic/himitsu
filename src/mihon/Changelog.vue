@@ -63,13 +63,13 @@ const changelog = computed(() => {
     font-size: 1.5rem
     margin: 0
     padding: 0
-    color: var(--vp-c-text-1)
+    color: var(--cl-header)
     border: none
   }
 
   div > p {
     margin: 0 0 1rem
-    color: var(--vp-c-text-2)
+    color: var(--dark-gray)
     font-size: 0.9rem
   }
 
