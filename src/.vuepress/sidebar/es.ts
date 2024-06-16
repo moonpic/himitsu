@@ -1,11 +1,11 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const esSidebar = sidebar({
-  "/": [
-    { text: 'Descargar', link: '/download/' },
-    { text: 'Registro de cambios', link: '/changelogs/' },  
-    { text: 'Bifurcaciones', link: '/forks/' },
-    { text: 'Contribuir', link: '/docs/contribute' },
+  "/ES/": [
+    { text: 'Descargar', link: '/ES/Descargar/' },
+    { text: 'Registro de cambios', link: '/ES/changelogs/' },  
+    { text: 'Bifurcaciones', link: '/ES/forks/' },
+    { text: 'Contribuir', link: '/ES/docs/contribute' },
     
     {
       text: "Guias",
@@ -13,6 +13,6 @@ export const esSidebar = sidebar({
       prefix: "guide/",
       children: "structure",
     },
-    { text: 'Introduccion', link: '/getting-started/' },
+    { text: 'Introduccion', link: '/ES/Empezando/' },
   ],
 });

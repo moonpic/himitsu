@@ -4,10 +4,10 @@ const locales = {
     title: "Himitsu",
     description: "A secret so good that even the name is banned.",
   },
-"/es": {
+"/ES/": {
   lang: "es-ES",
   title: "Himitsu",
-  description: "A secret so good that even the name is banned.",
+  description: "Un secreto tan bueno que hasta el nombre está prohibido.",
 },
 }
 

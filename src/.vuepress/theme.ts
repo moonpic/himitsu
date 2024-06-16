@@ -35,14 +35,14 @@ export default hopeTheme({
         editLink: "Edit this page on GitHub",
       },
     },
-    "/es": {
+    "/ES/": {
       navbar: esNavbar,
 
       sidebar: esSidebar,
 
       footer: "Himitsu",
 
-      displayFooter: false,
+      displayFooter: true,
 
       metaLocales: {
         editLink: "Edite esta página en GitHub",

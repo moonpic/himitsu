@@ -1,37 +1,29 @@
 import { navbar } from "vuepress-theme-hope";
 export const esNavbar = navbar([
   {
-    text: "Download",
+    text: "Descargar",
     icon: "download",
     children: [
       {
-        text: "Download",
+        text: "Descargar",
         icon: "download",
-        link: "/download/",
+        link: "/ES/Descargar/",
       },
       {
-        text: "Changelogs",
+        text: "Registros de cambios",
         icon: "lightbulb",
-        link: "/changelogs/",
+        link: "/ES/changelogs/",
       },
     ],
   },
   {
-    text: "Guide",
-    icon: "lightbulb",
-    prefix: "/guide/",
+    text: "Documentacion",
+    icon: "folder",
     children: [
       {
-        text: "Bar",
+        text: "Guías",
         icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
-      },
-      {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
+        children: [{ text: "Introducción", icon: "ellipsis", link: "/ES/Empezando/" }],
       },
     ],
   },
