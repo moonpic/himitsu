@@ -9,7 +9,7 @@ export default defineUserConfig({
      id: "G-J6PHW601VW",
    }),
   ],
-
+  
   base: "/",
 
   locales: localesConfig,

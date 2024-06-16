@@ -1,24 +1,20 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, esNavbar } from "./navbar/index.js";
-import { enSidebar } from "./sidebar/index.js";
+import { enSidebar, esSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  
-  
-
   navbarLayout: {
     start: ["Search"],
     end: ["Links", "Language", "Outlook", "Repo"],
   },
 
-  hostname: "https://himitsu2.vercel.app",
+  hostname: "https://animecross.xyz",
 
   author: {
     name: "Moonpic",
   },
 
   iconAssets: "fontawesome",
-
 
   repo: "moonpic/website",
   docsDir: "src",
@@ -39,47 +35,45 @@ export default hopeTheme({
         editLink: "Edit this page on GitHub",
       },
     },
-  "/es" : {
-  navbar: enNavbar,
+    "/es": {
+      navbar: esNavbar,
 
-      // sidebar
-      sidebar: enSidebar,
+      sidebar: esSidebar,
 
       footer: "Himitsu",
 
       displayFooter: false,
 
       metaLocales: {
-        editLink: "Edit this page on GitHub",
+        editLink: "Edite esta página en GitHub",
       },
     },
-
   },
 
   plugins: {
-     docsearch: {
-    appId: 'X0VGF1D6HR',
-    apiKey: '70daba0e597f1fdfaf2c93e7719a5633',
-    indexName: 'himitsu2',
-  },
+    docsearch: {
+      appId: 'X0VGF1D6HR',
+      apiKey: '70daba0e597f1fdfaf2c93e7719a5633',
+      indexName: 'himitsu2',
+    },
 
-    notice: [
-      {
-        path: "/",
-        title: "We need your help!",
-        content: "The creator of Himitsu has been kidnapped and is being held for a $10k ransom!",
-        actions: [
-          {
-            text: "Save him",
-            link: "https://buymeacoffee.com/abandonedcart",
-            type: "primary",
-          },
-          { text: "Nah" },
-        ],
-      },
-    ],
-    // Note: This is for testing ONLY!
-    // You MUST generate and use your own comment service in production.
+    // Uncomment and configure this section if needed
+    // notice: [
+    //   {
+    //     path: "/",
+    //     title: "We need your help!",
+    //     content: "The creator of Himitsu has been kidnapped and is being held for a $10k ransom!",
+    //     actions: [
+    //       {
+    //         text: "Save him",
+    //         link: "https://buymeacoffee.com/abandonedcart",
+    //         type: "primary",
+    //       },
+    //       { text: "Nah" },
+    //     ],
+    //   },
+    // ],
+
     comment: {
       provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",
@@ -92,10 +86,10 @@ export default hopeTheme({
       components: ["Badge", "VPCard", "VPBanner"],
     },
 
-  copyright: {
-    license: "MPL-2.0",
-  },
-    // All features are enabled for demo, only preserve features you need here
+    copyright: {
+      license: "MPL-2.0",
+    },
+
     mdEnhance: {
       align: true,
       attrs: false,
@@ -130,86 +124,65 @@ export default hopeTheme({
       tasklist: true,
       vPre: true,
 
-      // Install chart.js before enabling it
+      // Uncomment and configure these features if needed
       // chart: true,
-
-      // insert component easily
-
-      // Install echarts before enabling it
       // echarts: true,
-
-      // Install flowchart.ts before enabling it
       // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
       // gfm: true,
-
-      // Install katex before enabling it
       // katex: true,
-
-      // Install mathjax-full before enabling it
       // mathjax: true,
-
-      // Install mermaid before enabling it
       // mermaid: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // @moonpic I may use this in the future
-      // Install reveal.js before enabling it
       // revealJs: {
       //   plugins: ["highlight", "math", "search", "notes", "zoom"],
       // },
-
-      // Install @vue/repl before enabling it
       // vuePlayground: true,
-
-      // Install sandpack-vue3 before enabling it
       // sandpack: true,
     },
 
-    // until web is finished
-  //   pwa: {
-  // favicon: "/favicon.ico",
-  // cacheHTML: true,
-  // cacheImage: true,
-      // appendBase: true,
-      // apple: {
-         //icon: "/assets/icon/apple-icon-152.png",
-        // statusBarColor: "black",
-       //},
-       //msTile: {
-        // image: "/assets/icon/ms-icon-144.png",
-         //color: "#ffffff",
-       //},
-       //manifest: {
-         //icons: [
-          // {
-           //  src: "/assets/icon/chrome-mask-512.png",
-            // sizes: "512x512",
-            // purpose: "maskable",
-            // type: "image/png",
-           //},
-           //{
-             //src: "/assets/icon/chrome-mask-192.png",
-             //sizes: "192x192",
-             //purpose: "maskable",
-            // type: "image/png",
-           //},
-          // {
-             //src: "/assets/icon/chrome-512.png",
-             //sizes: "512x512",
-             //type: "image/png",
-           //},
-           //{
-             //src: "/assets/icon/chrome-192.png",
-             //sizes: "192x192",
-            // type: "image/png",
-          // },
-        // ],
-      // },
-     //}
+    redirect: {
+      switchLocale: 'modal',
+    },
+
+    // Uncomment and configure this section if needed
+    // pwa: {
+    //   favicon: "/favicon.ico",
+    //   cacheHTML: true,
+    //   cacheImage: true,
+    //   appendBase: true,
+    //   apple: {
+    //     icon: "/assets/icon/apple-icon-152.png",
+    //     statusBarColor: "black",
+    //   },
+    //   msTile: {
+    //     image: "/assets/icon/ms-icon-144.png",
+    //     color: "#ffffff",
+    //   },
+    //   manifest: {
+    //     icons: [
+    //       {
+    //         src: "/assets/icon/chrome-mask-512.png",
+    //         sizes: "512x512",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-mask-192.png",
+    //         sizes: "192x192",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-512.png",
+    //         sizes: "512x512",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-192.png",
+    //         sizes: "192x192",
+    //         type: "image/png",
+    //       },
+    //     ],
+    //   },
+    // },
   },
 });
