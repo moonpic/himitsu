@@ -1,6 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, esNavbar } from "./navbar/index.js";
-import { enSidebar, esSidebar } from "./sidebar/index.js";
+import localesconfig from "./locales.js";
 
 export default hopeTheme({
   navbarLayout: {
@@ -19,36 +18,7 @@ export default hopeTheme({
   repo: "moonpic/website",
   docsDir: "src",
 
-  locales: {
-    "/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Himitsu",
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-    "/ES/": {
-      navbar: esNavbar,
-
-      sidebar: esSidebar,
-
-      footer: "Himitsu",
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edite esta página en GitHub",
-      },
-    },
-  },
+  locales: localesconfig,
 
   plugins: {
     docsearch: {
@@ -56,23 +26,6 @@ export default hopeTheme({
       apiKey: '70daba0e597f1fdfaf2c93e7719a5633',
       indexName: 'himitsu2',
     },
-
-    // Uncomment and configure this section if needed
-    // notice: [
-    //   {
-    //     path: "/",
-    //     title: "We need your help!",
-    //     content: "The creator of Himitsu has been kidnapped and is being held for a $10k ransom!",
-    //     actions: [
-    //       {
-    //         text: "Save him",
-    //         link: "https://buymeacoffee.com/abandonedcart",
-    //         type: "primary",
-    //       },
-    //       { text: "Nah" },
-    //     ],
-    //   },
-    // ],
 
     comment: {
       provider: "Giscus",
@@ -123,66 +76,10 @@ export default hopeTheme({
       tabs: true,
       tasklist: true,
       vPre: true,
-
-      // Uncomment and configure these features if needed
-      // chart: true,
-      // echarts: true,
-      // flowchart: true,
-      // gfm: true,
-      // katex: true,
-      // mathjax: true,
-      // mermaid: true,
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-      // vuePlayground: true,
-      // sandpack: true,
     },
 
     redirect: {
       switchLocale: 'modal',
     },
-
-    // Uncomment and configure this section if needed
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cacheImage: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //   },
-    // },
   },
 });
