@@ -1,4 +1,4 @@
-const locales = {
+export const localesconfig = {
   "/": {
     navbar: [
       {
@@ -1849,4 +1849,237 @@ const locales = {
 },
 };
 
-export default locales;
+export const locales2= {
+    '/': {
+      placeholder: 'Search',
+      translations: {
+        button: {
+          buttonText: 'Search',
+        },
+      },
+    },
+    '/zh-cn/': {
+      placeholder: '搜索',
+      translations: {
+        button: {
+          buttonText: '搜索',
+        },
+      },
+    },
+    '/zh-tw/': {
+      placeholder: '搜尋',
+      translations: {
+        button: {
+          buttonText: '搜尋',
+        },
+      },
+    },
+    '/es/': {
+      placeholder: 'Buscar',
+      translations: {
+        button: {
+          buttonText: 'Buscar',
+        },
+      },
+    },
+    '/fr/': {
+      placeholder: 'Rechercher',
+      translations: {
+        button: {
+          buttonText: 'Rechercher',
+        },
+      },
+    },
+    '/de/': {
+      placeholder: 'Suchen',
+      translations: {
+        button: {
+          buttonText: 'Suchen',
+        },
+      },
+    },
+    '/ja/': {
+      placeholder: '検索',
+      translations: {
+        button: {
+          buttonText: '検索',
+        },
+      },
+    },
+    '/ko/': {
+      placeholder: '검색',
+      translations: {
+        button: {
+          buttonText: '검색',
+        },
+      },
+    },
+    '/pt/': {
+      placeholder: 'Pesquisar',
+      translations: {
+        button: {
+          buttonText: 'Pesquisar',
+        },
+      },
+    },
+    '/ru/': {
+      placeholder: 'Поиск',
+      translations: {
+        button: {
+          buttonText: 'Поиск',
+        },
+      },
+    },
+    '/vi/': {
+      placeholder: 'Tìm kiếm',
+      translations: {
+        button: {
+          buttonText: 'Tìm kiếm',
+        },
+      },
+    },
+    '/hi/': {
+      placeholder: 'खोजें',
+      translations: {
+        button: {
+          buttonText: 'खोजें',
+        },
+      },
+    },
+    '/ar/': {
+      placeholder: 'بحث',
+      translations: {
+        button: {
+          buttonText: 'بحث',
+        },
+      },
+    },
+    '/he/': {
+      placeholder: 'חפש',
+      translations: {
+        button: {
+          buttonText: 'חפש',
+        },
+      },
+    },
+    '/it/': {
+      placeholder: 'Cerca',
+      translations: {
+        button: {
+          buttonText: 'Cerca',
+        },
+      },
+    },
+    '/pl/': {
+      placeholder: 'Szukaj',
+      translations: {
+        button: {
+          buttonText: 'Szukaj',
+        },
+      },
+    },
+    '/uk/': {
+      placeholder: 'Пошук',
+      translations: {
+        button: {
+          buttonText: 'Пошук',
+        },
+      },
+    },
+    '/tr/': {
+      placeholder: 'Ara',
+      translations: {
+        button: {
+          buttonText: 'Ara',
+        },
+      },
+    },
+    '/nl/': {
+      placeholder: 'Zoeken',
+      translations: {
+        button: {
+          buttonText: 'Zoeken',
+        },
+      },
+    },
+    '/sv/': {
+      placeholder: 'Sök',
+      translations: {
+        button: {
+          buttonText: 'Sök',
+        },
+      },
+    },
+    '/fi/': {
+      placeholder: 'Hae',
+      translations: {
+        button: {
+          buttonText: 'Hae',
+        },
+      },
+    },
+    '/da/': {
+      placeholder: 'Søg',
+      translations: {
+        button: {
+          buttonText: 'Søg',
+        },
+      },
+    },
+    '/no/': {
+      placeholder: 'Søk',
+      translations: {
+        button: {
+          buttonText: 'Søk',
+        },
+      },
+    },
+    '/cs/': {
+      placeholder: 'Hledat',
+      translations: {
+        button: {
+          buttonText: 'Hledat',
+        },
+      },
+    },
+    '/hu/': {
+      placeholder: 'Keresés',
+      translations: {
+        button: {
+          buttonText: 'Keresés',
+        },
+      },
+    },
+    '/ro/': {
+      placeholder: 'Căutați',
+      translations: {
+        button: {
+          buttonText: 'Căutați',
+        },
+      },
+    },
+    '/sr/': {
+      placeholder: 'Претрага',
+      translations: {
+        button: {
+          buttonText: 'Претрага',
+        },
+      },
+    },
+    '/af/': {
+      placeholder: 'Soek',
+      translations: {
+        button: {
+          buttonText: 'Soek',
+        },
+      },
+    },
+    '/ca/': {
+      placeholder: 'Cerca',
+      translations: {
+        button: {
+          buttonText: 'Cerca',
+        },
+      },
+    },
+}

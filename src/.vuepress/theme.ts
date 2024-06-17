@@ -1,5 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import localesconfig from "./locales.js";
+import { localesconfig, locales2 } from "./locales.js";
 
 export default hopeTheme({
   navbarLayout: {
@@ -25,8 +25,9 @@ export default hopeTheme({
       appId: 'X0VGF1D6HR',
       apiKey: '70daba0e597f1fdfaf2c93e7719a5633',
       indexName: 'himitsu2',
+      locales: locales2,
     },
-
+    
     comment: {
       provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",

@@ -10,12 +10,12 @@ const locales = {
       description: "Un secreto tan bueno que hasta el nombre está prohibido.",
   },
   
-  "/zh-CN/": {
+  "/zh-cn/": {
   lang: "zh-CN",
   title: "Himitsu",
   description: "一个如此美好的秘密，甚至连名字都被禁止。",
   },
-  "/zh-TW/": {
+  "/zh-tw/": {
   lang: "zh-TW",
   title: "Himitsu",
   description: "一個如此美好的秘密，連名字都被禁止。",
