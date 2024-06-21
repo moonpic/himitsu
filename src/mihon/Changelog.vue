@@ -12,7 +12,7 @@ const releaseData = await release()
 const md = new MarkdownIt()
 
 const changelog = computed(() => {
-  const flavoredString = (releaseData[type.value].body ?? '').replaceAll("\n", "\n\n")
+  const flavoredString = (releaseData[type.value]?.body ?? '').replaceAll("\n", "\n\n")
     .replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, '[@$2](https://github.com/$2)')
     .replace('https://github.com/RepoDevil/Himitsu/releases', '/changelogs/')
 
@@ -27,6 +27,7 @@ const changelog = computed(() => {
     </header>
     <div v-html="changelog" />
     <Contributors
+      v-if="releaseData[type]?.author"
       :body="releaseData[type].body!"
       :author="releaseData[type].author.login"
       :tag="releaseData[type].tag_name"
@@ -91,7 +92,7 @@ const changelog = computed(() => {
 
     tr > td {
       &:first-child {
-        color: var(--vp-c-text-2)
+        color: var (--vp-c-text-2)
       }
 
       &:last-child {
