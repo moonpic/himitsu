@@ -21,7 +21,7 @@ async function data(): Promise<GitHubRelease[]> {
 
   while (hasMore) {
     const response = await axios.get<GitHubRelease[]>(
-      `https://api.github.com/repos/RepoDevil/Himitsu/releases`,
+      `https://himitsu-proxy.vercel.app/api/releases`,
       {
         params: {
           per_page: 100,
