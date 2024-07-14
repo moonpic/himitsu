@@ -30,6 +30,11 @@ export const localesconfig = {
                 icon: "ellipsis",
                 link: "/getting-started/",
               },
+              {
+                text: "Features",
+                icon: "ellipsis",
+                link: "/features",
+              }
             ],
           },
         ],
@@ -45,7 +50,7 @@ export const localesconfig = {
         icon: "book",
         prefix: "guide/",
         children: [
-          { text: 'Introduction', link: '/getting-started/' },
+          { text: 'Introduction', link: '/getting-started/' }, { text: 'Features', link: '/features'},
         ],
       },
     ],

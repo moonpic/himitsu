@@ -45,6 +45,7 @@ export default hopeTheme({
     },
 
     mdEnhance: {
+      revealJs: true,
       align: true,
       attrs: false,
       hint: true,
