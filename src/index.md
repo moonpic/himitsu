@@ -5,6 +5,7 @@ bgImageStyle:
   background-attachment: fixed
 heroText: Himitsu
 tagline: A secret so good that even the name is banned.
+tagline: Watch anime, read manga, and more! With your own sources!
 actions:
   - text: Get Started
     link: /getting-started/
