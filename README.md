@@ -7,7 +7,7 @@
 # Himitsu [Website](#)²
 
 ### Himitsu ㊙
-`A secret so good that even the name is banned.`
+`Anime. Manga. Tracking. Streaming. Socializing. What if doing all that only required one app?`
 
 [![Discord server](https://img.shields.io/discord/464998866639650839.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF)](https://discord.gg/vnrhgrt)
 [![GitHub downloads](https://img.shields.io/github/downloads/tsubakibot/tsubakibuilder/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat)](https://repodevil.netlify.app/download/)
