@@ -4,7 +4,7 @@ heroImage: assets/icon/logo.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Himitsu
-tagline: Anime. Manga. Tracking. Streaming. Socializing. What if doing all that only required one app?.
+tagline: Anime. Manga. Tracking. Streaming. Socializing. What if doing all that only required one app?
 actions:
   - text: Get Started
     link: /getting-started/
