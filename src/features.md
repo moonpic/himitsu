@@ -10,7 +10,7 @@ layout: Slide
 
 ## Android Compatible
 
-- Our app works perfectly on Android devices.
+- This app works perfectly on Android devices.
 
 ---
 
@@ -23,12 +23,6 @@ layout: Slide
 ## Connect with Popular Services
 
 - Sync with AniList & MyAnimeList and more to get content and user data.
-
----
-
-## Download and Torrent Support
-
-- Download your favorite episodes and chapters, with torrent support included.
 
 ---
 
@@ -53,12 +47,6 @@ layout: Slide
 ## Show Off on Discord
 
 - Let your friends on Discord see what you're watching or reading.
-
----
-
-## Custom Video Player
-
-- Stream anime episodes with a semibuilt-in player that lets you choose audio and subtitle tracks.
 
 ---
 
@@ -123,17 +111,15 @@ layout: Slide
 
 ---
 
-## AniList Integration
-
-- Seamlessly manage and track your anime and manga lists with AniList integration.
-
---
-
 ## Stream on Legal Sites
 
 - Stream content from legal sources like Crunchyroll or Netflix.
 
 ---
+
+## Addons
+
+- Discover some add-ons in the app
 
 ## Fun Easter Eggs
 

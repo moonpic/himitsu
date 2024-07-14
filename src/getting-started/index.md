@@ -8,6 +8,10 @@ prev: false
 next: false
 ---
 
+## What is Himitsu?
+
+Anime, Manga, Tracking, Streaming, Socializing. What if doing all that only required one app?
+Himitsu is the Japanese word for secret, so what’s ours? The app is also completely free.
 
 # Getting started
 
