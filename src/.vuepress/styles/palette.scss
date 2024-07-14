@@ -1,15 +1,14 @@
-// src/.vuepress/styles/palette.scss
-$theme-color: #096dd9;
+$theme-color: rgba(9, 109, 217, 0.8); // Principal color with transparency
 
-$light-gray: #bcbcbc; // Platform text
-$warning-color: #bcbcbc; // Caution text
-$cl-header: #222222; // CHangelog title
-$dark-gray: #222222; // CHangelog text
-$darker-gray: #444444; // Platform box
-$darkest-gray: #888888; // Platform shadow
-$dark-gray2: #444444; // Caution box
-$darkest-gray2: #888888; // Caution shadow
+$light-gray: rgba(255, 255, 255, 0.9); // Texto claro (blanco)
+$warning-color: rgba(255, 165, 0, 0.9); // Texto de advertencia en un naranja suave
+$cl-header: rgba(255, 255, 255, 0.9); // Título del changelog en blanco
+$dark-gray: rgba(224, 224, 224, 0.9); // Texto del changelog (gris claro)
+$darker-gray: rgba(34, 34, 34, 0.8); // Caja de la plataforma (fondo oscuro)
+$darkest-gray: rgba(68, 68, 68, 0.8); // Sombra de la plataforma (fondo más oscuro)
+$dark-gray2: rgba(34, 34, 34, 0.8); // Caja de advertencia (fondo claro)
+$darkest-gray2: rgba(68, 68, 68, 0.8); // Sombra de advertencia (fondo más claro)
 
 .bg-dark-gray {
-  background-color: #eeeeee; // Changelog
+  background-color: $darker-gray; // Fondo del changelog (oscuro)
 }

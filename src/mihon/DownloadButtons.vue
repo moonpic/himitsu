@@ -39,17 +39,16 @@ onMounted(() => {
       </p>
       <p>
         <strong>Himitsu</strong> is an <strong>Android app</strong> only.
-        Use an <strong>Android device</strong> to download and install the app.
+        Use an Android device to download and install the app.
       </p>
     </div>
     <div v-if="!isAndroid" class="custom-block warning">
-      <p class="custom-block-title">
-        <HopeIcon icon="fas fa-info-circle" /> Caution
-      </p>
-      <p>
-        Any app for any operating systems other than Android called
-        <strong>Himitsu</strong> is not affiliated with this project.
-      </p>
+      <p class="custom-block-title" style="color: #D24438;">
+  <HopeIcon icon="fas fa-info-circle" />Caution</p>
+<p>
+  Any app for any operating systems other than Android called
+  <strong>Himitsu</strong> is not affiliated with this project.
+</p>
       <blockquote>
         For more information, read the
         <a href="/docs/faq/general">General FAQ</a>.
@@ -167,7 +166,7 @@ onMounted(() => {
   font-size: 0.75rem;
 }
 
-.custom-block {
+ .custom-block {
   padding: 0.5em; /* Reduced padding */
   border-left: 5px solid;
   margin: 1em 0;
@@ -182,7 +181,11 @@ onMounted(() => {
   &.warning {
     background-color: $dark-gray2;
     border-color: $darkest-gray2;
-    color: $warning-color;
+    color: $light-gray; // Keep text color as white or adjust as needed
+
+    &-title {
+      color: #ffa500; // Change "Caution" title to orange
+    }
   }
 
   &-title {
@@ -190,4 +193,5 @@ onMounted(() => {
     margin-bottom: 0.5em;
   }
 }
+
 </style>
