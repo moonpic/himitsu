@@ -22,7 +22,7 @@ layout: Slide
 
 ## Connect with Popular Services
 
-- Sync with AniList, MyAnimeList, MangaUpdates, and more to get content and user data.
+- Sync with AniList & MyAnimeList and more to get content and user data.
 
 ---
 
@@ -58,18 +58,19 @@ layout: Slide
 
 ## Custom Video Player
 
-- Stream anime episodes with a built-in player that lets you choose audio and subtitle tracks.
+- Stream anime episodes with a semibuilt-in player that lets you choose audio and subtitle tracks.
 
---
+---
 
 ## Image Search
 
 - Anime search engine that fetches anime info based on the image provided.
+
 --
 
 ## Browse the Web
 
-- View web content directly within the app.
+- Navigate between your sources directly in the app
 
 ---
 
@@ -110,9 +111,9 @@ layout: Slide
 
 ---
 
-## Manage Extensions
+## Manage Your Sources
 
-- Easily manage extensions for anime, manga, and novels.
+- Easily manage your sources for anime, manga, and novels.
 
 ---
 
@@ -125,15 +126,22 @@ layout: Slide
 ## AniList Integration
 
 - Seamlessly manage and track your anime and manga lists with AniList integration.
----
-## A Lot of more
 
-- hidden since it's a secret sshh..
+--
+
+## Stream on Legal Sites
+
+- Stream content from legal sources like Crunchyroll or Netflix.
 
 ---
+
 ## Fun Easter Eggs
 
 - Discover hidden surprises throughout the app.
 
----
+--
+
+## A Lot of more
+
+- hidden since it's a secret sshh..
 @slideend
