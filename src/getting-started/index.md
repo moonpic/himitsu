@@ -9,7 +9,7 @@ next: false
 ---
 
 ## What is Himitsu?
-Himitsu is the Japanese word for secret, so what’s ours? The app is also completely free.
+Himitsu is the Japanese word for secret, so what’s ours? Give it a try and find out.
 # Getting started
 
 Essential information to help you get set up with Himitsu.
