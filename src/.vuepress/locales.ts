@@ -30,11 +30,11 @@ export const localesconfig = {
                 icon: "ellipsis",
                 link: "/getting-started/",
               },
-              {
-                text: "Features",
-                icon: "ellipsis",
-                link: "/features",
-              }
+             // {
+             //   text: "Features",
+               // icon: "ellipsis",
+                //link: "/features",
+             // }
             ],
           },
         ],
@@ -44,13 +44,13 @@ export const localesconfig = {
       { text: 'Download', link: '/download/' },
       { text: 'Changelogs', link: '/changelogs/' },
       { text: 'Forks', link: '/forks/' },
-      { text: 'Contribute', link: '/docs/contribute' },
+      { text: 'Contribute', link: '/docs/contribute/' },
       {
         text: "Guides",
         icon: "book",
         prefix: "guide/",
         children: [
-          { text: 'Introduction', link: '/getting-started/' }, { text: 'Features', link: '/features'},
+          { text: 'Introduction', link: '/getting-started/' },// { text: 'Features', link: '/features'},
         ],
       },
     ],

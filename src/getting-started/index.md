@@ -9,10 +9,7 @@ next: false
 ---
 
 ## What is Himitsu?
-
-Anime, Manga, Tracking, Streaming, Socializing. What if doing all that only required one app?
 Himitsu is the Japanese word for secret, so what’s ours? The app is also completely free.
-
 # Getting started
 
 Essential information to help you get set up with Himitsu.
@@ -37,12 +34,13 @@ External repositories add additional sources to **Himitsu**. You can add externa
 
 Once there, you can add repositories by inputing URLs ending with `index.min.json`.
 
---Once you've added a repository, it will automatically refresh.
----*You can now tap the download button next to extensions to install them.*
+
 
 ::: caution
 Himitsu will not provide resources for any unofficial repositories. Beware that any third-party repositories or extensions will have full access to the app and may contain malware.
-
+::: note
+Once you've added a repository, it will automatically refresh.
+*You can now tap the download button next to extensions to install them.*
 @tab Manual extensions
 
 Extensions can be manually installed through `.apk` files.
